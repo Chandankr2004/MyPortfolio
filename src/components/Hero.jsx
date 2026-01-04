@@ -99,13 +99,15 @@ const Hero = () => {
                 className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-2xl mx-auto sm:mx-0"
               >
                 <img
-                  src={personalInfo.imageUrl}
-                  alt={personalInfo.name}
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.target.src = 'https://ui-avatars.com/api/?name=Chandan+Kumar&size=320&background=a855f7&color=fff&bold=true'
-                  }}
-                />
+  src="/profile.jpeg"
+  alt={personalInfo.name}
+  className="w-full h-full object-cover"
+  onError={(e) => {
+    e.target.src =
+      "https://ui-avatars.com/api/?name=Chandan+Kumar&size=320&background=a855f7&color=fff&bold=true";
+  }}
+/>
+
                 <motion.div
                   animate={{
                     boxShadow: [
